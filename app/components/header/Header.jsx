@@ -3,6 +3,7 @@ import Image from 'next/image';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import styles from './Header.module.css';
+import marioImage from '../../../public/mario.png';
 
 const Header = () => {
   return (
@@ -15,7 +16,11 @@ const Header = () => {
         <HeaderSocials />
 
         <div className={styles.me}>
-          <Image src="/assets/mario.png" alt="me" width={240} height={300} />
+          <Image src={marioImage}
+            alt="me"
+            width={240}
+            height={300} 
+            />
         </div>
 
         <a href='#contact' className={styles.scrollDown}>Scroll Down</a>
