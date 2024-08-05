@@ -3,7 +3,7 @@ import Image from 'next/image';
 import CTA from './CTA';
 import HeaderSocials from './HeaderSocials';
 import styles from './Header.module.css';
-import marioImage from '../../../public/mario.png';
+import marioImage from '../../../../public/me.jpeg';
 
 const Header = () => {
   return (
