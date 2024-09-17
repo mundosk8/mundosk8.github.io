@@ -1,32 +1,31 @@
-import React from 'react';
-import Image from 'next/image';
-import CTA from './CTA';
-import HeaderSocials from './HeaderSocials';
-import styles from './Header.module.css';
-import marioImage from '../../../../public/me.jpeg';
+import React from "react";
+import Image from "next/image";
+import CTA from "./CTA";
+import HeaderSocials from "./HeaderSocials";
+import marioImage from "../../../../public/me.jpeg";
 
 const Header = () => {
   return (
-    <header className={styles.header}>
-      <div className={[styles.container, styles.headerContainer]}>
-        <h5>Hello Im</h5>
-        <h1>Edmundo Freitas</h1>
-        <h5 className="text-light">Frontend developer</h5>
+    <header className="h-dvh pt-28 overflow-hidden">
+      <section className="h-full">
+        <article className="flex justify-between sm:flex-row flex-col">
+          <div>
+            <h1 className="text-4xl font-semibold">Hey! I&apos;m Edmundo</h1>
+            <h5 className="text-start text-purple-600">Frontend developer</h5>
+          </div>
+          <Image
+            className="rounded-3xl"
+            src={marioImage}
+            alt="me"
+            width={300}
+            height={300}
+          />
+        </article>
         <CTA />
         <HeaderSocials />
-
-        <div className={styles.me}>
-          <Image src={marioImage}
-            alt="me"
-            width={240}
-            height={300} 
-            />
-        </div>
-
-        <a href='#contact' className={styles.scrollDown}>Scroll Down</a>
-      </div>
+      </section>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
