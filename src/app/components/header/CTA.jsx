@@ -1,11 +1,14 @@
+"use client";
 import React from "react";
-import styles from './Header.module.css';
+import DownloadCV from "../DownloadCV";
 
 const CTA = () => {
   return (
-    <div className={styles.cta}>
-      <a href="/edmundo_freitas_cv.pdf" target="_blank" className="btn">Download CV</a>
-      <a href="#contact" className="btn btn-primary">Lets talk</a>
+    <div className="mt-10 flex justify-center gap-5">
+      <DownloadCV />
+      <a href="#contact" className="btn btn-primary">
+        Lets talk
+      </a>
     </div>
   );
 };
