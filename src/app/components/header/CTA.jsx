@@ -4,11 +4,11 @@ import DownloadCV from "../DownloadCV";
 
 const CTA = () => {
   return (
-    <div className="mt-10 flex justify-center gap-5">
+    <div className="mt-10 flex justify-start gap-5 text-nowrap">
       <DownloadCV />
-      <a href="#contact" className="btn btn-primary">
+      {/* <a href="#contact" className="btn btn-primary">
         Lets talk
-      </a>
+      </a> */}
     </div>
   );
 };

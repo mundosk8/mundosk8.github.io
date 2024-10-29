@@ -4,7 +4,7 @@ import { BsGithub, BsLinkedin, BsTwitter } from "react-icons/bs";
 
 const HeaderSocials = () => {
   return (
-    <div className="flex flex-col items-center gap-3 absolute left-0 bottom-12">
+    <div className="flex items-center gap-3 mt-5">
       <a
         href="https://www.linkedin.com/in/edmundo-freitas-124b438a/"
         target="_blank"
